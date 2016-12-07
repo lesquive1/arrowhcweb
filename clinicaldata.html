@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Clinical Data</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/common_layout.css">
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<!--start of body-->
+<a href="newpage.html" style="display:inline-block" type="button" class="btn btn-primary btn pull-right btn-xs" >BACK</a>
+<div class="container">
+<h1 class="page-header" style="color:#337ab7; text-align:center">My Patients</h1>
+</div>  <!--End of container-->
+<div class="container">
+	<div class="jumbotron">
+<div class="panel panel-primary ">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Patient</div>
+  <!-- Table -->
+  <table class="table" id="mypatients">
+    <tr>
+     <th>P_id</th>
+     <th>P_Name</th>
+     <th>Dept</th>
+     <th>room No.</th>
+     <th>Nurse id</th>    
+    </tr>
+    <tr>
+   <tr>
+   <td>101</td>
+     <td>Harry</td>
+     <td>Common</td>
+     <td>301 A</td>
+     <td>1111</td>  
+   </tr>
+  </table>
+</div>
+
+    <div class="panel panel-info">
+        <div class="panel-heading">Clinical Data</div>
+        <!-- Table -->
+            <table class="table" id="clinicaldata">
+                <tr>
+                    <th>Blood Presure</th>
+                    <th>Cholesterol</th>
+                    <th>Temperature</th>
+                    <th>Date & Time</th>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Negative</td>
+                    <td>High</td>
+                    <td>37</td>
+                    <td>19/08/2011 13:45</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</table>
+</div> <!--End of jumbotron-->
+</div> <!--End of container-->
+<div class="container" style="text-align:center">
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <a href="tablayoutsearch.html" type="button" class="btn btn-primary">All Patients</a>
+  </div>
+  <div class="btn-group" role="group">
+    <a href="add_p.html" type="button" class="btn btn-primary">Add Patient</a>
+  </div>
+  <div class="btn-group" role="group">
+    <a href="add_t.html" type="button" class="btn btn-primary">Add Test</a>
+  </div>
+</div>
+</div> <!--End of container-->
+
+<!--End of body-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

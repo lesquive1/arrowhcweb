@@ -1,0 +1,51 @@
+<html>
+<head>
+
+    <title>Arrow Health Care Web</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/signin.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/common_layout.css">
+    <style type="text/css"></style>
+
+</head>
+<body>
+    <div class="bgc">
+        <div class="container" style="text-align:center">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12">
+                    <h1 class="page-header" style="color:#337ab7; text-align:center">Sign-In</h1>
+                    <div id="log_in">
+                        <div class="jumbotron">
+                            <div class="form-group">        
+                                <label for="#user" style="color:#ffffff">User name</label>
+                                <input type="email" class="form-control" id="user"/>
+                            </div> <!-- form-group -->
+                            <div class="form-group">
+                                <label for="#pswd" style="color:#ffffff">Password</label>
+                                <input type="password" class="form-control" id="pswd"/>
+                            </div> <!-- form-group -->
+                            <div class="form-group" >
+                                <input type="button" style="display:inline-block" class="btn btn-primary" id="go" value="Sign In" onclick="signin()"/>
+                            </div> <!-- form-group -->
+                         </div><!-- jumbotron -->
+                    </div> <!-- log_in -->
+                </div> <!-- col -->
+            </div>  <!-- row -->
+            <div><p id="login_error" style="color:#FF0000"></p></div>
+        </div> <!-- container -->
+        <div class="bgc row" height="300px">
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->      
+</body>
+</html>

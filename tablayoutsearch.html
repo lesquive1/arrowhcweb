@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Techs - Mobile Platforms - Test 1</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="scripts/searched_content.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/tablayout.css">
+  <link rel="stylesheet" type="text/css" href="css/common_layout.css">
+
+
+</head>
+
+<body>
+<a href="newpage.html" style="display:inline-block" type="button" class="btn btn-primary btn pull-right btn-xs" >BACK</a>
+
+<div class="container" style="text-align:center"><h2 class="page-header" style="color:#337ab7">Search Patient </h2></div>
+<div id="tabs_container" class="container"> 
+
+<ul  class="nav nav-pills">
+
+      <li class="active" >
+        <a style="display:inline-block" href="#tab_c_1" data-toggle="tab">Search by Name</a>
+      </li>
+      <li ><a style="display:inline-block" href="#tab_c_2" data-toggle="tab">Search by Dept</a>
+      </li>
+    
+    </ul>
+      
+      <div class="tab-content clearfix">
+        <div class="tab-pane active" id="tab_c_1">
+        	<!--tab 1 containt-->
+                   <form action="newpage.html" method="post">
+                          <div class="jumbotron" style="text-align:center">
+                               <div class="form-group">
+	
+                                     <label for="#patient_name" style="color: #ffffff">Search By Patient Name</label>
+                                     <input type="email" class="form-control" id="patient_name"/>
+                               </div> <!-- form-group -->
+
+                               <div class="form-group" >
+                                      <button id="s_by_pN" style="display:inline-block" type="button" class="btn btn-primary" onclick="show_search()" >SEARCH</button>
+                               </div> <!-- form-group -->
+                               <br>
+                               
+                          </div><!-- jumbotron -->
+                   </form> 
+            <!--tab 1 containt-->
+        </div>
+        <div class="tab-pane" id="tab_c_2">
+          <!--tab 1 containt-->
+                   <form action="newpage.html" method="post">
+                          <div class="jumbotron" style="text-align:center">
+                               <div class="form-group">
+	
+                                     <label for="#dept" style="color: #ffffff">Search By Department</label>
+                                     <input type="email" class="form-control" id="dept"/>
+                               </div> <!-- form-group -->
+
+                               <div class="form-group" >
+                                    <button id="s_b_d" style="display:inline-block" type="button" class="btn btn-primary" onclick="show_search()">SEARCH</button>
+                               
+                               </div> <!-- form-group -->
+
+                          </div><!-- jumbotron -->
+                   </form> 
+
+        </div>
+        </div>
+     
+      </div>
+
+         <div class="hidden" id="searched_list">
+          <!-- Area to add searched content in list or table -->
+          <div class="list-group">
+  <div  class="list-group-item list-group-item" height="100px">
+    <p id="s_name" class="list-group-item-text col-xs-3" style="font-size:42px">Harry</p>
+    <h5 class="list-group-item-heading pull-right">Nurse1</h5><br>
+    <h5 class="list-group-item-heading pull-right">Room no.205</h5><br>
+    <h5 class="list-group-item-heading pull-right">Audiology</h5><br>
+  </div>
+ 
+</div>
+         </div>
+  </div>
+
+  <!--added jquery script -->
+
+
+<!--added jquery script -->
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+</div>
+    <script src="js/app.js"></script>
+</body>
+</html>
